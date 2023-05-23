@@ -1,0 +1,8 @@
+services:
+  archdistcc:
+    build: .
+    environment:
+      - DISTCCD_JOBS=16
+    restart: always
+    ports:
+      - 3632:3632
